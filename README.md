@@ -1,4 +1,4 @@
-##RMSF_6PIB_PG4
+RMSF Calculation Using NAMD with spesific ligand nameli PG4 in protein 6pib
 
 ##Running in VMD TkConsole
 
