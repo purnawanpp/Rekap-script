@@ -1,4 +1,4 @@
-#Calculation RMSD and RMSF with selected ligand in PDB 6PIB namely PG4
+#Calculation RMSF with selected ligand in PDB 6PIB namely PG4
 
 mol new  step3_input.pdb type pdb
 mol addfile step5_production.dcd type dcd first 0 last -1 step 1 waitfor all
