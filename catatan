@@ -1,0 +1,71 @@
+Telah dilakukan MD dengan 1 ns dengan residu sebanyak 860 dengan waktu MD 24 Menit
+
+#Dilakukan preparasi seperti bisa, tambahkan hidrogen dan muatan amber 
+antechamber -i 1hw9_lig.pdb -fi pdb -o 1HW9_ligand_antechamber.mol2 -fo mol2 -at gaff -c bcc -rn LIG -nc -1    #ini yang dirunning, lupa hrusnya yang dibawah
+antechamber -i 1hw9_lig.pdb -fi pdb -o 1HW9_ligand_antechamber.mol2 -fo mol2 -at gaff2 -c bcc -rn LIG -nc -1
+parmchk2 -i 1HW9_ligand_antechamber.mol2 -f mol2 -o 1HW9_ligand.am1bcc.frcmod
+
+
+## running equil dan minimisasi
+bash mdequilibration.sh
+
+##running production
+bash mdproduction.sh
+
+#untuk lihat program berjalan
+tail -f 10.prod.info
+
+#RMSD Calculation
+cpptraj -i cpptraj_strip_wat.in
+cpptraj -p 1HW9.complex.parm7 -i cpptraj_rmsd_lig.in
+cpptraj -p 1HW9.gas.complex.parm7 -i cpptraj_rmsd_rec.in #gagal Error: '1HW9.gas.complex.parm7': No such file or directory
+                                                          Error: Could not open topology '1HW9.gas.complex.parm7'
+								TIME: Total execution time: 0.0001 seconds.
+									Error: Error(s) occurred during execution.
+
+#Hidrogen Bond
+cpptraj -p 1HW9.wet.complex.parm7 -i cpptraj_hbond.in
+
+
+#another tutor from utah.edu
+cpptraj
+parm 1HW9.wet.complex.parm7
+trajin 10_prod.trj
+
+
+#mmgbsa
+bash mmgbsa.sh
+telah dilakukan perhitungan mmpbsa dengan waktu 9,43 jam
+
+
+#Perhitungan RMSD
+rms BBrmsd :1-433@C,CA,N out BBrmsd.agr
+
+#RMSF Calculation
+#catatan jalankan semuanya di cpptraj satu persatu
+
+parm 1HW9.complex.parm7
+trajin 1HW9_stripfit_restrained_gas.trj
+rms first
+average crdset MyAvg
+run
+rms ref MyAvg
+atomicfluct out fluct.agr
+atomicfluct out back.agr @C,CA,N byres bfactor
+atomicfluct out backbone-atoms.agr @C,CA,N
+run
+
+#RMSF Wet
+parm 1HW9.wet.complex.parm7
+trajin 1HW9_stripfit_restrained_gas.trj
+rms first
+average crdset MyAvg
+run
+rms ref MyAvg
+atomicfluct out ligand.fluct.agr
+atomicfluct out ligand.back.agr @C,CA,N byres bfactor
+atomicfluct out ligand.backbone-atoms.agr @C,CA,N
+run
+
+##09032022
+Gagal melakukan mpirun pada perhitungan mmpbsa
