@@ -17,25 +17,19 @@
 
 
 # Instalasi VMD dan NAMD #
-1. Download software VMD pda link berikut yang terintegrasi dengan CUDA dan Linux https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD
-2. Ekstrak file tersebut dengan perintah diterminal: #tar -zxvf NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
-4. Now change directory to the extracted folder for NAMD by using this command in
-5. cd NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA
-6. Now, give root access by typing
-7. sudo su
-8. Finally, in terminal, type
-9. cp namd2 /usr/local/bin
-10. In this way you can install NAMD in Ubuntu (LINUX)
+1. Download software NAMD pda link berikut yang terintegrasi dengan CUDA dan Linux https://www.ks.uiuc.edu/Research/namd/cvs/download/741376/NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
+2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
+4. Masuk kedirektori dengan mengetik diterminal: *cd NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA
+6. Akses Root pada linux dengan perintah:*sudo su
+8. Copy file eksekusi di bin dengan perintah:*cp namd2 /usr/local/bin
+10. Cek isntalasi dengan perintah: *namd2
 
 VMD
-1. Download software VMD pda link berikut yang terintegrasi dengan CUDA dan Linux https://www.ks.uiuc.edu/Research/namd/cvs/download/741376/NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
-2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf vmd-1.9.4a55.bin.LINUXAMD64-CUDA102-OptiX650-OSPRay185.opengl.tar.gz
-4. Now change directory to the extracted folder for VMD by using this command in terminal: cd vmd-1.9.4
-6. Now, give root access by typing
-7. sudo su
-8. Then type
-9. ./configure LINUXAMD64
-10. Change the directory by using
+1. Download software VMD pda link berikut yang terintegrasi dengan CUDA dan Linux hhttps://www.ks.uiuc.edu/Research/vmd/alpha/vmd-1.9.4a55.bin.LINUXAMD64-CUDA102-OptiX650-OSPRay185-RTXRTRT.opengl.tar.gz
+2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf vvmd-1.9.4a55.bin.LINUXAMD64-CUDA102-OptiX650-OSPRay185-RTXRTRT.opengl.tar.gz
+4. Masuk kedirektori folder
+6. Akses root dengan perintah: *sudo su
+8. Selanjutnya ketik: *./configure LINUXAMD64
+10. ubah directory dengan perintah
 11. cd src
-12. Finally, type
-13. make install
+12. Selanjutnya jalankan: *make install
