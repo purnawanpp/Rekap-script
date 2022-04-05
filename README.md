@@ -19,7 +19,7 @@
 # Instalasi VMD dan NAMD #
 1. First of all download the latest version of NAMD for your system. Since I use 64 bit Ubuntu, I will download the latest NAMD version from
 2. Then extract the contents of the folder in your current directory, in my case NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz by using the command
-3. tar -zxvf NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDAtar.gz
+3. tar -zxvf NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
 4. Now change directory to the extracted folder for NAMD by using this command in
 5. cd NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA
 6. Now, give root access by typing
