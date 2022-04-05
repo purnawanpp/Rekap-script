@@ -17,28 +17,28 @@
 
 
 # Instalasi VMD dan NAMD #
-First of all download the latest version of NAMD for your system. Since I use 64 bit Ubuntu, I will download the latest NAMD version from
-Then extract the contents of the folder in your current directory, in my case NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz by using the command
-tar -zxvf NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDAtar.gz
-Now change directory to the extracted folder for NAMD by using this command in
-cd NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA
-Now, give root access by typing
-sudo su
-Finally, in terminal, type
-cp namd2 /usr/local/bin
-In this way you can install NAMD in Ubuntu (LINUX)
+1. First of all download the latest version of NAMD for your system. Since I use 64 bit Ubuntu, I will download the latest NAMD version from
+2. Then extract the contents of the folder in your current directory, in my case NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz by using the command
+3. tar -zxvf NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDAtar.gz
+4. Now change directory to the extracted folder for NAMD by using this command in
+5. cd NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA
+6. Now, give root access by typing
+7. sudo su
+8. Finally, in terminal, type
+9. cp namd2 /usr/local/bin
+10. In this way you can install NAMD in Ubuntu (LINUX)
 
 VMD
-Download the latest 64 bit version of VMD for LINUX from
-Extract the contents of the folder in your current directory, in my case vmd-1.9.2.bin.LINUXAMD64-RHEL5.opengl.tar.gz by using the command
-tar -zxvf vmd-1.9.2.bin.LINUXAMD64-RHEL5.opengl.tar.gz
-Now change directory to the extracted folder for VMD by using this command in terminal
-cd vmd-1.9.2
-Now, give root access by typing
-sudo su
-Then type
-./configure LINUXAMD64
-Change the directory by using
-cd src
-Finally, type
-make install
+1. Download the latest 64 bit version of VMD for LINUX from
+2. Extract the contents of the folder in your current directory, in my case vmd-1.9.4a55.bin.LINUXAMD64-CUDA102-OptiX650-OSPRay185.opengl.tar.gz by using the command
+3, tar -zxvf vmd-1.9.4a55.bin.LINUXAMD64-CUDA102-OptiX650-OSPRay185.opengl.tar.gz
+4. Now change directory to the extracted folder for VMD by using this command in terminal
+5. cd vmd-1.9.4
+6. Now, give root access by typing
+7. sudo su
+8. Then type
+9. ./configure LINUXAMD64
+10. Change the directory by using
+11. cd src
+12. Finally, type
+13. make install
