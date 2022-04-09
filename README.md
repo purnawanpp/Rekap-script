@@ -43,3 +43,40 @@
 8. Selanjutnya ketik: *./configure LINUXAMD64*
 10. ubah directory dengan perintah: *cd src*
 12. Selanjutnya jalankan: *make install*
+
+# Tutorial Gromacs dengan CHARMM36 Force Field
+1. bahkan hidrogen mengguakan Avogadro simpan menjadi file jz4.mol2 edit file jz4.mol2 dengan text editor ganti ***** menjadi JZ4
+2. Jnkan perintah berikut: perl sort_mol2_bonds.pl jz4.mol2 jz4_fix.mol2
+# stalasi dan atur networx dengan perintah berikut:
+1.	conda activate
+2.	conda create -n networkx
+3.	conda activate networkx
+4.	pip install --upgrade pip
+5.	sudo pip uninstall networkx
+6.	sudo add-apt-repository ppa:deadsnakes/ppa
+7.	sudo apt-get update
+8.	sudo apt-get install python3.6
+9.	pip install networkx==2.3 
+10.	python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-jul2021.ff
+# Jalankan perintah berikut
+conda activate networkx
+python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36_ljpme-jul2021.ff
+gmx editconf -f jz4_ini.pdb -o jz4.gro
+# Perhatian Eror pada ionisasi karena dalam folder charmm36-jul2021.ff CL didefinisikan CLA bisa diganti CL jika diperlukan
+gmx pdb2gmx -f protein.pdb -ignh
+gmx editconf -f conf.gro -o newbox.gro -bt dodecahedron -d 1.0
+gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
+gmx grompp -f ions.mdp -c solv.gro -p topol.top -o ions.tpr
+gmx genion -s ions.tpr -o solv_ions.gro -p topol.top -neutral -conc 0.15
+gmx grompp -f nvt.mdp -c em.gro -r em.gro -p topol.top -n index.ndx -o nvt.tpr
+gmx mdrun -deffnm nvt &
+gmx grompp -f npt.mdp -c nvt.gro -t nvt.cpt -r nvt.gro -p topol.top -n index.ndx -o npt.tpr -maxwarn 1
+gmx mdrun -deffnm npt &
+gmx grompp -f md.mdp -c npt.gro -t npt.cpt -p topol.top -n index.ndx -o md_0_10.tpr
+gmx mdrun -v -s md_0_10.tpr -deffnm md_0_10 &
+gmx trjconv -s md_0_10.tpr -f md_0_10.xtc -o md_0_10_center.xtc -center pbc mol -ur compact
+gmx trjconv -s md_0_10.tpr -f md_0_10_center.xtc -o start.pdb -dump 0
+gmx energy -f em.edr -o minimenergi.xvg
+gmx trjconv -s md_0_10.tpr -f md_0_10.xtc -o analisis.xtc -pbc mol -ur compact
+xmgrace analisis.xtc
+
