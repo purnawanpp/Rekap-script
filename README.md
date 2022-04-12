@@ -24,8 +24,9 @@
 6.	sudo add-apt-repository ppa:deadsnakes/ppa
 7.	sudo apt-get update
 8.	sudo apt-get install python3.7
-9.	pip install networkx==2.3 
-10.	python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-jul2021.ff
+9.	pip install networkx==2.3
+10.	conda install -c anaconda numpy 
+11.	python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-jul2021.ff
 
 # Instalasi NAMD #
 1. Download software NAMD pda link berikut yang terintegrasi dengan CUDA dan Linux https://www.ks.uiuc.edu/Research/namd/cvs/download/741376/NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
