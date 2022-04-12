@@ -56,8 +56,9 @@
 6.	sudo add-apt-repository ppa:deadsnakes/ppa
 7.	sudo apt-get update
 8.	sudo apt-get install python3.6
-9.	pip install networkx==2.3 
-10.	python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-jul2021.ff
+9.	pip install networkx==2.3
+10.	conda install -c anaconda numpy 
+11.	python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-jul2021.ff
 # Jalankan perintah berikut
 1. conda activate networkx
 2. python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36_ljpme-jul2021.ff
