@@ -48,21 +48,10 @@
 # Tutorial Gromacs dengan CHARMM36 Force Field
 1. bahkan hidrogen mengguakan Avogadro simpan menjadi file jz4.mol2 edit file jz4.mol2 dengan text editor ganti ***** menjadi JZ4
 2. Jnkan perintah berikut: perl sort_mol2_bonds.pl jz4.mol2 jz4_fix.mol2
-# stalasi dan atur networx dengan perintah berikut:
-1.	conda activate
-2.	conda create -n networkx
-3.	conda activate networkx
-4.	pip install --upgrade pip
-5.	sudo pip uninstall networkx
-6.	sudo add-apt-repository ppa:deadsnakes/ppa
-7.	sudo apt-get update
-8.	sudo apt-get install python3.6
-9.	pip install networkx==2.3
-10.	conda install -c anaconda numpy 
-11.	python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-jul2021.ff
+
 # Jalankan perintah berikut
 1. conda activate networkx
-2. python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36_ljpme-jul2021.ff
+2. python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-mar2019.ff
 3. gmx editconf -f jz4_ini.pdb -o jz4.gro
 # Perhatian Eror pada ionisasi karena dalam folder charmm36-jul2021.ff CL didefinisikan CLA bisa diganti CL jika diperlukan
 1.	gmx pdb2gmx -f protein.pdb -ignh
