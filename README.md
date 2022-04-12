@@ -19,7 +19,7 @@
 1.	conda activate
 2.	conda create -n networkx
 3.	conda activate networkx
-4.	pip install --upgrade pip
+4.	pip3 install --upgrade pip
 5.	sudo pip uninstall networkx
 6.	sudo add-apt-repository ppa:deadsnakes/ppa
 7.	sudo apt-get update
