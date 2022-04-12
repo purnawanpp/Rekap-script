@@ -15,7 +15,7 @@
 2. conda env list 
 3. conda env remove --name xxxx
 
-# Instalasi networkx untuk menjalankan CHARMM General Force Field (CGenFF)/ Installing networkx to run CHARMM General Force Field (CGenFF) #
+# Instalasi networkx untuk menjalankan CHARMM General Force Field (CGenFF)/ Installing networkx to run CHARMM General Force Field (CGenFF)-Cara 1 #
 1.	conda activate
 2.	conda create -n networkx
 3.	conda activate networkx
@@ -27,6 +27,13 @@
 9.	pip install networkx==2.3
 10.	conda install -c anaconda numpy 
 11.	python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-jul2021.ff
+
+
+# Instalasi networkx untuk menjalankan CHARMM General Force Field (CGenFF)-Cara 2
+1. sudo apt-get install python3.6
+2. sudo pip uninstall network
+3. sudo pip install networkx==2.3
+4. sudo pip install numpy
 
 # Instalasi NAMD #
 1. Download software NAMD pda link berikut yang terintegrasi dengan CUDA dan Linux https://www.ks.uiuc.edu/Research/namd/cvs/download/741376/NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
