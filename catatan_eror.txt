@@ -1,0 +1,20 @@
+#Pesan eror saat menjalankan FF14SB dengan code protein 3htb
+
+NOTE 1 [file nvt.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
+
+WARNING 1 [file npt.mdp]:
+  The Berendsen barostat does not generate any strictly correct ensemble,
+  and should not be used for new production simulations (in our opinion).
+  For isotropic scaling we would recommend the C-rescale barostat that also
+  ensures fast relaxation without oscillations, and for anisotropic scaling
+  you likely want to use the Parrinello-Rahman barostat.
+
+NOTE 1 [file npt.mdp]:
+  Removing center of mass motion in the presence of position restraints
+  might cause artifacts. When you are using position restraints to
+  equilibrate a macro-molecule, the artifacts are usually negligible.
+
