@@ -52,8 +52,11 @@
 10. ubah directory dengan perintah: *cd src*
 12. Selanjutnya jalankan: *make install*
 
+# Tutorial Gromacs dengan AMBER FF14SB Force Field
+1. Download dan ekstrak file berikut https://github.com/purnawanpp/Rekap-script/blob/main/amber14sb_parmbsc1.ff.zip
+
 # Tutorial Gromacs dengan CHARMM36 Force Field
-1. bahkan hidrogen mengguakan Avogadro simpan menjadi file jz4.mol2 edit file jz4.mol2 dengan text editor ganti ***** menjadi JZ4
+1. Tambahkan hidrogen dengan menggunakan Chimera UCSF 
 2. Jnkan perintah berikut: perl sort_mol2_bonds.pl jz4.mol2 jz4_fix.mol2
 
 # Jalankan perintah berikut
