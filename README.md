@@ -34,6 +34,8 @@
 2. sudo pip uninstall network
 3. sudo pip install networkx==2.3
 4. sudo pip install numpy
+5. pip uninstall networkx
+6. pip install networkx==2.3
 
 # Instalasi NAMD #
 1. Download software NAMD pda link berikut yang terintegrasi dengan CUDA dan Linux https://www.ks.uiuc.edu/Research/namd/cvs/download/741376/NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
@@ -63,6 +65,7 @@
 1. conda activate networkx
 2. python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-mar2019.ff
 3. gmx editconf -f jz4_ini.pdb -o jz4.gro
+
 # Perhatian Eror pada ionisasi karena dalam folder charmm36-jul2021.ff CL didefinisikan CLA bisa diganti CL jika diperlukan
 1.	gmx pdb2gmx -f protein.pdb -ignh
 2.	gmx editconf -f conf.gro -o newbox.gro -bt dodecahedron -d 1.0
