@@ -84,3 +84,7 @@
 15.	gmx trjconv -s md_0_10.tpr -f md_0_10.xtc -o analisis.xtc -pbc mol -ur compact
 16.	xmgrace analisis.xtc
 
+# Semua Script Amber pada link berikut 
+1. https://github.com/purnawanpp/Rekap-script/blob/main/catatan_amber
+2. https://github.com/purnawanpp/Rekap-script/blob/main/Input_file_amber.zip
+
