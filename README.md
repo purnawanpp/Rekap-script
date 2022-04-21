@@ -82,7 +82,7 @@
 13.	gmx trjconv -s md_0_10.tpr -f md_0_10_center.xtc -o start.pdb -dump 0
 14.	gmx energy -f em.edr -o minimenergi.xvg
 15.	gmx trjconv -s md_0_10.tpr -f md_0_10.xtc -o analisis.xtc -pbc mol -ur compact
-16.	xmgrace analisis.xtc
+16.	xmgrace analisis.xtc 
 
 # Semua Script Amber pada link berikut 
 1. https://github.com/purnawanpp/Rekap-script/blob/main/catatan_amber
