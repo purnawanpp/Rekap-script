@@ -54,8 +54,11 @@
 10. ubah directory dengan perintah: *cd src*
 12. Selanjutnya jalankan: *make install*
 
-# Tutorial Gromacs dengan AMBER FF14SB Force Field
+# Gromacs dengan AMBER FF14SB Force Field
 1. Download dan ekstrak file berikut https://github.com/purnawanpp/Rekap-script/blob/main/amber14sb_parmbsc1.ff.zip
+
+# Gromacs dengan Force Field OPLS
+1. Download dan ekstrak file berikut https://github.com/purnawanpp/Rekap-script/blob/main/GMX_OPLSAAM.zip
 
 # Tutorial Gromacs dengan CHARMM36 Force Field
 1. Tambahkan hidrogen dengan menggunakan Chimera UCSF 
@@ -87,4 +90,6 @@
 # Semua Script Amber pada link berikut 
 1. https://github.com/purnawanpp/Rekap-script/blob/main/catatan_amber
 2. https://github.com/purnawanpp/Rekap-script/blob/main/Input_file_amber.zip
+
+
 
