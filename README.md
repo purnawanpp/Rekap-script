@@ -91,5 +91,9 @@
 1. https://github.com/purnawanpp/Rekap-script/blob/main/catatan_amber
 2. https://github.com/purnawanpp/Rekap-script/blob/main/Input_file_amber.zip
 
+# Instalasi Cmake
+1. sudo apt install libssl-dev
+2. sudo apt install cmake
+
 
 
