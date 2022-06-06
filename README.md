@@ -46,8 +46,8 @@
 10. Cek isntalasi dengan perintah: *namd2*
 
 # Instalasi VMD #
-1. Download software VMD pda link berikut yang terintegrasi dengan CUDA dan Linux hhttps://www.ks.uiuc.edu/Research/vmd/alpha/vmd-1.9.4a55.bin.LINUXAMD64-CUDA102-OptiX650-OSPRay185-RTXRTRT.opengl.tar.gz
-2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf vvmd-1.9.4a55.bin.LINUXAMD64-CUDA102-OptiX650-OSPRay185-RTXRTRT.opengl.tar.gz*
+1. Download software VMD pda link berikut: https://www.ks.uiuc.edu/Development/Download/download.cgi?UserID=&AccessCode=&ArchiveID=1649
+2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf vmd-1.9.4a55.bin.LINUXAMD64-CUDA102-OptiX650-OSPRay185-RTXRTRT.opengl.tar.gz*
 4. Masuk kedirektori folder
 6. Akses root dengan perintah: *sudo su*
 8. Selanjutnya ketik: *./configure LINUXAMD64*
