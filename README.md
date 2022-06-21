@@ -69,23 +69,11 @@
 2. python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-mar2019.ff
 3. gmx editconf -f jz4_ini.pdb -o jz4.gro
 
-# Perhatian Eror pada ionisasi karena dalam folder charmm36-jul2021.ff CL didefinisikan CLA bisa diganti CL jika diperlukan
-1.	gmx pdb2gmx -f protein.pdb -ignh
-2.	gmx editconf -f conf.gro -o newbox.gro -bt dodecahedron -d 1.0
-3.	gmx solvate -cp newbox.gro -cs spc216.gro -p topol.top -o solv.gro
-4.	gmx grompp -f ions.mdp -c solv.gro -p topol.top -o ions.tpr
-5.	gmx genion -s ions.tpr -o solv_ions.gro -p topol.top -neutral -conc 0.15
-6.	gmx grompp -f nvt.mdp -c em.gro -r em.gro -p topol.top -n index.ndx -o nvt.tpr
-7.	gmx mdrun -deffnm nvt &
-8.	gmx grompp -f npt.mdp -c nvt.gro -t nvt.cpt -r nvt.gro -p topol.top -n index.ndx -o npt.tpr -maxwarn 1
-9.	gmx mdrun -deffnm npt &
-10.	gmx grompp -f md.mdp -c npt.gro -t npt.cpt -p topol.top -n index.ndx -o md_0_10.tpr
-11.	gmx mdrun -v -s md_0_10.tpr -deffnm md_0_10 &
-12.	gmx trjconv -s md_0_10.tpr -f md_0_10.xtc -o md_0_10_center.xtc -center pbc mol -ur compact
-13.	gmx trjconv -s md_0_10.tpr -f md_0_10_center.xtc -o start.pdb -dump 0
-14.	gmx energy -f em.edr -o minimenergi.xvg
-15.	gmx trjconv -s md_0_10.tpr -f md_0_10.xtc -o analisis.xtc -pbc mol -ur compact
-16.	xmgrace analisis.xtc 
+# Docking dengan Gnina (pastikan sudah install openbabel dan vina_split yang bisa dieksekusi diterminal)
+1. gnina -r Protein.pdb -l Ligand.pdb --autobox_ligand Ligand.pdb -o docked.sdf --seed 0 > hasil.txt
+2. obrms -firstonly Ligand.pdb docked.sdf > RMSD.txt
+3. obabel docked.sdf -O docked.pdbqt
+4. vina_split --input docked.pdbqt
 
 # Semua Script Amber pada link berikut 
 1. https://github.com/purnawanpp/Rekap-script/blob/main/catatan_amber
