@@ -37,6 +37,18 @@
 5. pip uninstall networkx
 6. pip install networkx==2.3
 
+# Instalasi Gnina (Pastikan sudah install CUDA)
+1. apt-get install build-essential cmake git wget libboost-all-dev libeigen3-dev libgoogle-glog-dev libprotobuf-dev protobuf-compiler libhdf5-dev libatlas-base-dev python3-dev librdkit-dev python3-numpy python3-pip python3-pytest
+2. git clone https://github.com/gnina/gnina.git
+3. cd gnina
+4. mkdir build
+5. cd build
+6. cmake ..
+7. make
+8. make install
+9. sudo su
+10. git config --global --add safe.directory /home/yss/Programs/gnina/build/libmolgrid-prefix/src/libmolgrid
+
 # Instalasi NAMD #
 1. Download software NAMD pda link berikut yang terintegrasi dengan CUDA dan Linux https://www.ks.uiuc.edu/Research/namd/cvs/download/741376/NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
 2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz*
