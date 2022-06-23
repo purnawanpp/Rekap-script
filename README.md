@@ -38,7 +38,7 @@
 6. pip install networkx==2.3
 
 # Instalasi Gnina (Pastikan sudah install CUDA)
-1. apt-get install build-essential cmake git wget libboost-all-dev libeigen3-dev libgoogle-glog-dev libprotobuf-dev protobuf-compiler libhdf5-dev libatlas-base-dev python3-dev librdkit-dev python3-numpy python3-pip python3-pytest
+1. sudo apt-get install build-essential cmake git wget libboost-all-dev libeigen3-dev libgoogle-glog-dev libprotobuf-dev protobuf-compiler libhdf5-dev libatlas-base-dev python3-dev librdkit-dev python3-numpy python3-pip python3-pytest
 2. git clone https://github.com/gnina/gnina.git
 3. cd gnina
 4. mkdir build
