@@ -113,9 +113,9 @@ apt -y install tcsh make \
     -DMPI=FALSE -DCUDA=TRUE -DINSTALL_TESTS=TRUE \
     -DDOWNLOAD_MINICONDA=TRUE -DMINICONDA_USE_PY3=TRUE
 9. make install -j 4 
-10. Tes Gpu dengan source ~/Software/Amber20_cuda/amber.sh 
-cd ~/Software/Amber20_cuda
-make test.cuda.serial
-make test.serial
+10. Tes Gpu dengan source ~/Software/Amber20_cuda/amber.sh \
+cd ~/Software/Amber20_cuda \
+make test.cuda.serial \
+make test.serial \
 
 
