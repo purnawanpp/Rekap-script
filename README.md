@@ -95,5 +95,22 @@
 1. sudo apt install libssl-dev
 2. sudo apt install cmake
 
+# Instalasi AMBER22
+1. sudo apt -y update
+apt -y install tcsh make \
+               gcc gfortran \
+               flex bison patch bc wget \
+               xorg-dev libz-dev libbz2-dev 
+2. Ekstrak filenya kedalam folder yang sama
+3. mkdir build
+4. cd build
+5. sudo su
+6. ./run_cmake
+7. make install
+8. cmake ../ \
+    -DCMAKE_INSTALL_PREFIX=~/Software/Amber22_cuda \
+    -DCOMPILER=GNU  \
+    -DMPI=FALSE -DCUDA=TRUE -DINSTALL_TESTS=TRUE \
+    -DDOWNLOAD_MINICONDA=TRUE -DMINICONDA_USE_PY3=TRUE
 
 
