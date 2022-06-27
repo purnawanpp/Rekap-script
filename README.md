@@ -57,7 +57,7 @@
 2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf xxxx.tar.gz*
 4. Masuk kedirektori dengan mengetik diterminal: *cd xxx*
 6. Akses Root pada linux dengan perintah:*sudo su*
-8. Copy file eksekusi di bin dengan perintah:*cp namd2 /usr/local/bin*
+8. Copy file eksekusi di bin dengan perintah:*cp namd3 /usr/local/bin*
 10. Cek isntalasi dengan perintah: *namd3*
 
 # Instalasi VMD #
