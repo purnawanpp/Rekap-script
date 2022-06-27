@@ -40,7 +40,7 @@
 5. pip uninstall networkx
 6. pip install networkx==2.3
 
-# Instalasi Gnina (Pastikan sudah install CUDA)
+# Instalasi Gnina (Pastikan sudah install CUDA) untuk ubuntu 20.04, jika eror install versi dan dependesinya via docker
 1. sudo apt-get install build-essential cmake git wget libboost-all-dev libeigen3-dev libgoogle-glog-dev libprotobuf-dev protobuf-compiler libhdf5-dev libatlas-base-dev python3-dev librdkit-dev python3-numpy python3-pip python3-pytest
 2. git clone https://github.com/gnina/gnina.git
 3. cd gnina
