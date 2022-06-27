@@ -58,7 +58,7 @@
 4. Masuk kedirektori dengan mengetik diterminal: *cd xxx*
 6. Akses Root pada linux dengan perintah:*sudo su*
 8. Copy file eksekusi di bin dengan perintah:*cp namd2 /usr/local/bin*
-10. Cek isntalasi dengan perintah: *namd2*
+10. Cek isntalasi dengan perintah: *namd3*
 
 # Instalasi VMD #
 1. Download software VMD pda link berikut: https://www.ks.uiuc.edu/Development/Download/download.cgi?UserID=&AccessCode=&ArchiveID=1649
