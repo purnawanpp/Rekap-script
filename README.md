@@ -53,9 +53,9 @@
 10. git config --global --add safe.directory /home/yss/Programs/gnina/build/libmolgrid-prefix/src/libmolgrid
 
 # Instalasi NAMD #
-1. Download software NAMD pda link berikut yang terintegrasi dengan CUDA dan Linux https://www.ks.uiuc.edu/Research/namd/cvs/download/741376/NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz
-2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA.tar.gz*
-4. Masuk kedirektori dengan mengetik diterminal: *cd NAMD_Git-2022-04-05_Linux-x86_64-multicore-CUDA*
+1. Download software NAMD pda link berikut yang terintegrasi dengan CUDA dan Linux https://www.ks.uiuc.edu/Development/Download/download.cgi?PackageName=NAMD
+2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf xxxx.tar.gz*
+4. Masuk kedirektori dengan mengetik diterminal: *cd xxx*
 6. Akses Root pada linux dengan perintah:*sudo su*
 8. Copy file eksekusi di bin dengan perintah:*cp namd2 /usr/local/bin*
 10. Cek isntalasi dengan perintah: *namd2*
