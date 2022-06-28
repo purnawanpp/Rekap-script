@@ -98,12 +98,9 @@
 1. sudo apt install libssl-dev
 2. sudo apt install cmake
 
-# Instalasi AMBER22
-1. sudo apt -y update
-apt -y install tcsh make \
-               gcc gfortran \
-               flex bison patch bc wget \
-               xorg-dev libz-dev libbz2-dev 
+# Instalasi AMBER22, memakai cuda 11.6, gcc dan g++ versi 9 dan cmake 23.2 dan ubuntu 20.04
+1. sudo apt install bc csh flex xorg-dev zlib1g-dev build-essential \
+    libbz2-dev patch cmake bison gfortran python
 2. Ekstrak filenya kedalam folder yang sama
 3. mkdir build
 4. cd build
@@ -116,8 +113,8 @@ apt -y install tcsh make \
     -DMPI=FALSE -DCUDA=TRUE -DINSTALL_TESTS=TRUE \
     -DDOWNLOAD_MINICONDA=TRUE -DMINICONDA_USE_PY3=TRUE
 9. make install -j 4 
-10. Tes Gpu dengan source ~/Software/Amber20_cuda/amber.sh \
-cd ~/Software/Amber20_cuda \
+10. Tes Gpu dengan source ~/Amber22_cuda/amber.sh \
+cd ~/Amber22_cuda \
 make test.cuda.serial \
 make test.serial \
 
