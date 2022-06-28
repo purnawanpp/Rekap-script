@@ -89,6 +89,7 @@
 2. obrms -firstonly Ligand.pdb docked.sdf > RMSD.txt
 3. obabel docked.sdf -O docked.pdbqt
 4. vina_split --input docked.pdbqt
+5. obabel docked_ligand_1.pdbqt -O docked_ligand_1.pdb
 
 # Semua Script Amber pada link berikut 
 1. https://github.com/purnawanpp/Rekap-script/blob/main/catatan_amber
