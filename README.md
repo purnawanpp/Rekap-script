@@ -119,4 +119,13 @@ cd ~/Amber22_cuda \
 make test.cuda.serial \
 make test.serial \
 
+# Instalasi gmx_MMPBSA
+1. conda update conda
+2. conda create -n gmxMMPBSA python=3.9 -y -q
+3. conda activate gmxMMPBSA
+4. conda install -c conda-forge mpi4py=3.1.3 ambertools=21.12 compilers -y -q
+5. python -m pip install git+https://github.com/Valdes-Tresanco-MS/ParmEd.git@v3.4
+6. python -m pip install pyqt5
+
+
 
