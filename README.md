@@ -120,14 +120,15 @@ make test.cuda.serial \
 make test.serial \
 
 # Instalasi gmx_MMPBSA
-1. conda update conda
-2. conda create -n gmxMMPBSA python=3.9 -y -q
-3. conda activate gmxMMPBSA
-4. conda install -c conda-forge mpi4py=3.1.3 ambertools=21.12 compilers -y -q
-5. python -m pip install git+https://github.com/Valdes-Tresanco-MS/ParmEd.git@v3.4
-6. python -m pip install pyqt5
-7. python -m pip install gmx_MMPBSA
-8. python -m pip install gmx_MMPBSA -U
+1. sudo apt install git
+2. conda update conda
+3. conda create -n gmxMMPBSA python=3.9 -y -q
+4. conda activate gmxMMPBSA
+5. conda install -c conda-forge mpi4py=3.1.3 ambertools=21.12 compilers -y -q
+6. python -m pip install git+https://github.com/Valdes-Tresanco-MS/ParmEd.git@v3.4
+7. python -m pip install pyqt5
+8. python -m pip install gmx_MMPBSA
+9. python -m pip install gmx_MMPBSA -U
 
 
 
