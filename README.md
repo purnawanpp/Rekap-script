@@ -120,7 +120,7 @@ make test.cuda.serial \
 make test.serial \
 
 # Instalasi Conda
-1.Download miniconda pada link berikut: https://docs.conda.io/en/latest/miniconda.html#:~:text=Miniconda%20is%20a%20free%20minimal,zlib%20and%20a%20few%20others
+1.Download miniconda pada link berikut:https://docs.conda.io/en/latest/miniconda.html#:~:text=Miniconda%20is%20a%20free%20minimal,zlib%20and%20a%20few%20others
 2. Install dengan perintah: bash Miniconda3-latest-Linux-x86_64.sh
 3. pastikan conda udah ada di path dengan: nano ~/.bashrc
 4. Restart terminal
