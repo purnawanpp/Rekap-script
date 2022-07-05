@@ -119,6 +119,17 @@ cd ~/Amber22_cuda \
 make test.cuda.serial \
 make test.serial \
 
+# Instalasi Conda
+1.Download miniconda pada link berikut: https://docs.conda.io/en/latest/miniconda.html#:~:text=Miniconda%20is%20a%20free%20minimal,zlib%20and%20a%20few%20others.
+2. Install dengan perintah: bash Miniconda3-latest-Linux-x86_64.sh
+3. pastikan conda udah ada di path dengan: nano ~/.bashrc
+4. Restart terminal
+
+# Instalasi Acpype
+1. Jalankan perintah berikut: conda install -c conda-forge acpype
+2. conda activate
+3. cek dengan perintah acpype
+
 # Instalasi gmx_MMPBSA
 1. sudo apt install git
 2. conda update conda
