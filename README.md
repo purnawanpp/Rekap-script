@@ -1,4 +1,26 @@
 # Kumpulan Script Computational Chemistry
+
+# Installation Conda
+1. Download miniconda 
+2. bash Miniconda3-latest-Linux-x86_64.sh
+3. Make sure conda is already in the path with: nano ~/.bashrc
+4. Restart terminal
+
+# Installation  Acpype
+1. conda install -c conda-forge acpype
+2. conda activate
+3. acpype
+
+# Installation gmx_MMPBSA
+1. sudo apt install git
+2. conda update conda
+3. conda create -n gmxMMPBSA python=3.9 -y -q
+4. conda activate gmxMMPBSA
+5. conda install -c conda-forge mpi4py=3.1.3 ambertools=21.12 compilers -y -q
+6. python -m pip install git+https://github.com/Valdes-Tresanco-MS/ParmEd.git@v3.4
+7. python -m pip install pyqt5
+8. python -m pip install gmx_MMPBSA
+9. python -m pip install gmx_MMPBSA -U
 # Pemisahan Receptor dan Ligand menggunakan Terminal
 1. grep "JZ4" 3htb.pdb > ligand.pdb
 2. grep "ATOM" 3htb.pdb > protein.pdb
@@ -119,27 +141,7 @@ cd ~/Amber22_cuda \
 make test.cuda.serial \
 make test.serial \
 
-# Instalasi Conda
-1. Download miniconda 
-2. bash Miniconda3-latest-Linux-x86_64.sh
-3. Pastikan conda udah ada di path dengan: nano ~/.bashrc
-4. Restart terminal
 
-# Instalasi Acpype
-1. Jalankan perintah berikut: conda install -c conda-forge acpype
-2. conda activate
-3. cek dengan perintah acpype
-
-# Instalasi gmx_MMPBSA
-1. sudo apt install git
-2. conda update conda
-3. conda create -n gmxMMPBSA python=3.9 -y -q
-4. conda activate gmxMMPBSA
-5. conda install -c conda-forge mpi4py=3.1.3 ambertools=21.12 compilers -y -q
-6. python -m pip install git+https://github.com/Valdes-Tresanco-MS/ParmEd.git@v3.4
-7. python -m pip install pyqt5
-8. python -m pip install gmx_MMPBSA
-9. python -m pip install gmx_MMPBSA -U
 
 
 
