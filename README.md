@@ -41,17 +41,11 @@
 3. conda env remove --name xxxx
 
 # Instalasi networkx untuk menjalankan CHARMM General Force Field (CGenFF)/ Installing networkx to run CHARMM General Force Field (CGenFF)-Cara 1 #
-1.	conda activate
-2.	conda create -n networkx
-3.	conda activate networkx
-4.	pip3 install --upgrade pip
-5.	sudo pip uninstall networkx
-6.	sudo add-apt-repository ppa:deadsnakes/ppa
-7.	sudo apt-get update
-8.	sudo apt-get install python3.7
-9.	pip install networkx==2.3
-10.	conda install -c anaconda numpy 
-11.	python3 cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4_fix.str charmm36-jul2021.ff
+1. Install conda python version 3.7 : https://repo.anaconda.com/miniconda/Miniconda3-py37_4.12.0-Linux-x86_64.sh
+2. make sure it says base
+3. conda install -c anaconda numpy
+4. pip install networkx==2.3
+5. run the following command: python cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4.str charmm36-mar2019.ff
 
 
 # Instalasi networkx untuk menjalankan CHARMM General Force Field (CGenFF)-Cara 2
