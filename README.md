@@ -49,12 +49,11 @@
 
 
 # Instalasi networkx untuk menjalankan CHARMM General Force Field (CGenFF)-Cara 2
-1. sudo apt-get install python3.6
-2. sudo pip uninstall network
-3. sudo pip install networkx==2.3
-4. sudo pip install numpy
-5. pip uninstall networkx
-6. pip install networkx==2.3
+1. conda create -n cgenff python=3.7 -y -q
+2. conda activate cgenff
+3. conda install -c anaconda numpy
+4. pip install networkx==2.3
+5. python cgenff_charmm2gmx_py3_nx2.py JZ4 jz4_fix.mol2 jz4.str charmm36-mar2019.ff
 
 # Instalasi Gnina (Pastikan sudah install CUDA) untuk ubuntu 20.04, jika eror install versi dan dependesinya via docker
 1. sudo apt-get install build-essential cmake git wget libboost-all-dev libeigen3-dev libgoogle-glog-dev libprotobuf-dev protobuf-compiler libhdf5-dev libatlas-base-dev python3-dev librdkit-dev python3-numpy python3-pip python3-pytest
