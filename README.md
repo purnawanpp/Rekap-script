@@ -139,7 +139,8 @@ make test.serial \
 2. Download adgpu disini: https://github.com/ccsb-scripps/AutoDock-GPU/releases/download/v1.5.3/adgpu-v1.5.3_linux_ocl_128wi 
 3. Rename file tersebut menjadi adgpu
 4. Buka terminal lalu: chmod +x adgpu
-5. Jalankan docking dengan perintah: adgpu --ffile 4ieh_protein.maps.fld --lfile 4ieh_ligand.pdbqt --nrun 100
+5. Buatkan path dengan perintah: nano ~/.bashrc (pelajari cara pembuatan path di youtube/google)
+6. Jalankan docking dengan perintah: adgpu --ffile 4ieh_protein.maps.fld --lfile 4ieh_ligand.pdbqt --nrun 100
 
 
 
