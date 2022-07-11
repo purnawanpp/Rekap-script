@@ -134,6 +134,12 @@ cd ~/Amber22_cuda \
 make test.cuda.serial \
 make test.serial \
 
+# Menjalankan Autodock di GPU (adgpu)
+1. Install Cuda terlebih dahulu tutorialnya  ada divideo ini: https://www.youtube.com/watch?v=snnej7icK_Y&ab_channel=PurnawanPontanaPutra
+2. Download adgpu disini: https://github.com/ccsb-scripps/AutoDock-GPU/releases/download/v1.5.3/adgpu-v1.5.3_linux_ocl_128wi 
+3. Rename file tersebut menjadi adgpu
+4. Buka terminal lalu: chmod +x adgpu
+5. Jalankan docking dengan perintah: adgpu --ffile 4ieh_protein.maps.fld --lfile 4ieh_ligand.pdbqt --nrun 100
 
 
 
