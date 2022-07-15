@@ -142,6 +142,15 @@ make test.serial \
 5. Buatkan path dengan perintah: nano ~/.bashrc (pelajari cara pembuatan path di youtube/google)
 6. Jalankan docking dengan perintah: adgpu --ffile 4ieh_protein.maps.fld --lfile 4ieh_ligand.pdbqt --nrun 100
 
+# Instalasi Vina-GPU
+1. install cuda
+2. Install open cl nvidia dengan perintah : sudo apt-get install -y nvidia-opencl-dev
+3. install clinfo dengan perintah: sudo apt-get install clinfo
+4. make clean
+5. make source
+6. Buatkan path
+7. rename Vina-GPU.exe menjadi vinagpu
+8. jalankan dengan perintah: vinagpu --config 2bm2_config.txt
 
 
 
