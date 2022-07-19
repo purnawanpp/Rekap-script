@@ -152,5 +152,8 @@ make test.serial \
 7. rename Vina-GPU.exe menjadi vinagpu
 8. jalankan dengan perintah: vinagpu --config 2bm2_config.txt
 
+# Masuk Gamess-us NVIDIA Gpu
+1. docker run -it nvcr.io/hpc/gamess:17.09-r2-libcchem
+
 
 
