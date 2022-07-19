@@ -154,6 +154,8 @@ make test.serial \
 
 # Masuk Gamess-us NVIDIA Gpu
 1. docker run -it nvcr.io/hpc/gamess:17.09-r2-libcchem
+2. Mengetahi id docker: docker ps
+3. Masuk di spesifik id docker: docker exec -it 2f89329e4907 bash
 
 
 
