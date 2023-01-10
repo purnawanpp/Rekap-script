@@ -157,5 +157,9 @@ make test.serial \
 2. Mengetahi id docker: docker ps
 3. Masuk di spesifik id docker: docker exec -it 2f89329e4907 bash
 
+# Memperbesar font pada tkconsule
+1. Jalankan perintah berikut: tkcon font calibri 13
+
+
 
 
