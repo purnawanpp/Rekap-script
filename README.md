@@ -79,10 +79,9 @@
 1. Download software VMD pda link berikut: https://www.ks.uiuc.edu/Development/Download/download.cgi?UserID=&AccessCode=&ArchiveID=1649
 2. Ekstrak file tersebut dengan perintah diterminal: *tar -zxvf vmd-1.9.4a55.bin.LINUXAMD64-CUDA102-OptiX650-OSPRay185-RTXRTRT.opengl.tar.gz*
 4. Masuk kedirektori folder
-6. Akses root dengan perintah: *sudo su*
-8. Selanjutnya ketik: *./configure LINUXAMD64*
-10. ubah directory dengan perintah: *cd src*
-12. Selanjutnya jalankan: *make install*
+5. Selanjutnya ketik: *./configure*
+6. ubah directory dengan perintah: *cd src*
+7. Selanjutnya jalankan: *sudo make install*
 
 # Gromacs dengan AMBER FF14SB Force Field
 1. Download dan ekstrak file berikut https://github.com/purnawanpp/Rekap-script/blob/main/amber14sb_parmbsc1.ff.zip
