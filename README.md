@@ -168,5 +168,9 @@ make test.serial \
 6. gnina -r rec.pdb -l lig.pdb --autobox_ligand lig.pdb -o docked.sdf --seed 0 > hasil.txt
 7. gnina -r rec.pdb -l drug_dock.pdb --autobox_ligand lig.pdb -o docked.sdf --seed 0 > hasil.txt
 
+# Preparasi reseptor dan ligand pada charmmgui
+1. grep ATOM complex.pdb > rec.pdb
+2. grep CODE_LIGAND complex.pdb > lig.pdb
+3. cat rec.pdb lig.pdb > hasil.pdb
 
 
