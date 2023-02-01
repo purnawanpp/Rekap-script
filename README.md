@@ -160,12 +160,13 @@ make test.serial \
 1. Jalankan perintah berikut: tkcon font calibri 12
 
 # Menjalankan Gnina, open babel dan XTB
-1. obabel drug.pdb -O drug.xyz 
-2. obabel drug.xyz.sdf -O drug_H.xyz -h
-3. xtb drug_H.xyz --opt
-4. obabel xtbopt.xyz -O drug_dock.pdb 
-5. gnina -r rec.pdb -l lig.pdb --autobox_ligand lig.pdb -o docked.sdf --seed 0 > hasil.txt
-6. gnina -r rec.pdb -l drug_dock.pdb --autobox_ligand lig.pdb -o docked.sdf --seed 0 > hasil.txt
+1. obabel drug.pdb -O drug.xyz -h
+2. Tambahkan hidrogen secara manual dengan chimera simpan dengan nama drug_H.pdb
+3. obabel drug_H.pdb -O drug_H.xyz
+4. xtb drug_H.xyz --opt
+5. obabel xtbopt.xyz -O drug_dock.pdb 
+6. gnina -r rec.pdb -l lig.pdb --autobox_ligand lig.pdb -o docked.sdf --seed 0 > hasil.txt
+7. gnina -r rec.pdb -l drug_dock.pdb --autobox_ligand lig.pdb -o docked.sdf --seed 0 > hasil.txt
 
 
 
