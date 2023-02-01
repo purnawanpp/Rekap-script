@@ -161,7 +161,7 @@ make test.serial \
 
 # Menjalankan Gnina, open babel dan XTB
 1. obabel drug.pdb -O drug.xyz 
-2. obabel drug.xyz -O drug_H.xyz -p #pH 7.4 dan penambahan hydrogen
+2. obabel drug.xyz.sdf -O drug_H.xyz -h
 3. xtb drug_H.xyz --opt
 4. obabel xtbopt.xyz -O drug_dock.pdb 
 5. gnina -r rec.pdb -l lig.pdb --autobox_ligand lig.pdb -o docked.sdf --seed 0 > hasil.txt
