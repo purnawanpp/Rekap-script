@@ -139,10 +139,8 @@
 6. ./run_cmake
 7. Jika terjadi eror saat insatalasi miniconda buka file CMakeFiles/miniconda/download/Miniconda3-latest-Linux-x86_64.sh buka di text editor terus ganti #/bin/sh menjadi #/bin/bash.
 8. make install -j 4
-10. Tes Gpu dengan source: ~/Amber22_cuda/amber.sh \
-cd ~/Amber22_cuda \
-make test.cuda.serial \
-make test.serial \
+10. Buatkan path pada folder eksekusi bin: **export PATH=$PATH:/home/amber/Programs/Amber/amber22/bin**
+
 
 # OPSI-2- Instalasi AMBER22, memakai cuda 11.6, gcc dan g++ versi 9 dan cmake 3.23.2 dan ubuntu 20.04
 1. sudo apt install bc csh flex xorg-dev zlib1g-dev build-essential \
