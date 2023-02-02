@@ -139,7 +139,8 @@
 6. ./run_cmake
 7. Jika terjadi eror saat insatalasi miniconda buka file CMakeFiles/miniconda/download/Miniconda3-latest-Linux-x86_64.sh buka di text editor terus ganti #/bin/sh menjadi #/bin/bash.
 8. make install -j 4
-10. Buatkan path pada folder eksekusi bin: **export PATH=$PATH:/home/amber/Programs/Amber/amber22/bin**
+10. Buatkan path pada folder agar file dapat dieksekusi: **export PATH=$PATH:/home/amber/Programs/Amber/amber22/bin**
+11. Buatkan path conda: **export PATH=$PATH://home/amber/Programs/Amber/amber22/miniconda/bin/**
 
 
 # OPSI-2- Instalasi AMBER22, memakai cuda 11.6, gcc dan g++ versi 9 dan cmake 3.23.2 dan ubuntu 20.04
