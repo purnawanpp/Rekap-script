@@ -119,8 +119,8 @@
 2. Ekstrak filenya kedalam folder yang sama
 3. mkdir build
 4. cd build
-5. sudo su
-6. ./run_cmake
+5. ./run_cmake
+6. Jika terjadi eror saat insatalasi miniconda buka file CMakeFiles/miniconda/download/Miniconda3-latest-Linux-x86_64.sh buka di text editor terus ganti #/bin/sh menjadi #/bin/bash.
 7. make install
 8. cmake ../ \
     -DCMAKE_INSTALL_PREFIX=~/Software/Amber22_cuda \
