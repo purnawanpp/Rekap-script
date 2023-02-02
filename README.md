@@ -113,7 +113,7 @@
 1. sudo apt install libssl-dev
 2. sudo apt install cmake
 
-# OPSI-1- Instalasi AMBER22, memakai cuda 11.6, gcc dan g++ versi 9 dan cmake 3.25.0 dan ubuntu 20.04
+# OPSI-1- Instalasi AMBER22, memakai cuda 11.6, gcc dan g++ versi 9 dan cmake 3.25.0 dan LUBUNTU 20.04
 1. sudo apt install bc csh flex xorg-dev zlib1g-dev build-essential \
     libbz2-dev patch cmake bison gfortran python
 2. Ekstrak filenya kedalam folder yang sama
