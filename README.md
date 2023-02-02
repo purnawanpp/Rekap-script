@@ -133,6 +133,38 @@ cd ~/Amber22_cuda \
 make test.cuda.serial \
 make test.serial \
 
+# Instalasi AMBER22, memakai cuda 11.6, gcc dan g++ versi 9 dan cmake 3.23.2 dan ubuntu 20.04
+1. sudo apt install bc csh flex xorg-dev zlib1g-dev build-essential \
+    libbz2-dev patch cmake bison gfortran python
+2. Ekstrak filenya kedalam folder yang sama
+3. mkdir build
+4. cd build
+5. Edit file run_cmake pada bagian -DCUDA=TRUE Untuk menjalankan CUDAnya#  Assume this is Linux:
+
+  cmake $AMBER_PREFIX/amber22_src \
+    -DCMAKE_INSTALL_PREFIX=$AMBER_PREFIX/amber22 \
+    -DCOMPILER=GNU  \
+    -DMPI=FALSE -DCUDA=FALSE -DINSTALL_TESTS=TRUE \
+    -DDOWNLOAD_MINICONDA=TRUE \
+    2>&1 | tee  cmake.log
+    
+    menjadi 
+   cmake $AMBER_PREFIX/amber22_src \
+    -DCMAKE_INSTALL_PREFIX=$AMBER_PREFIX/amber22 \
+    -DCOMPILER=GNU  \
+    -DMPI=FALSE -DCUDA=TRUE -DINSTALL_TESTS=TRUE \
+    -DDOWNLOAD_MINICONDA=TRUE \
+    2>&1 | tee  cmake.log
+    
+6. ./run_cmake
+7. Jika terjadi eror saat insatalasi miniconda buka file CMakeFiles/miniconda/download/Miniconda3-latest-Linux-x86_64.sh buka di text editor terus ganti #/bin/sh menjadi #/bin/bash.
+8. make install -j 4
+10. Tes Gpu dengan source ~/Amber22_cuda/amber.sh \
+cd ~/Amber22_cuda \
+make test.cuda.serial \
+make test.serial \
+
+
 # Menjalankan Autodock di GPU (adgpu)
 1. Install Cuda terlebih dahulu tutorialnya  ada divideo ini: https://www.youtube.com/watch?v=snnej7icK_Y&ab_channel=PurnawanPontanaPutra
 2. Download adgpu disini: https://github.com/ccsb-scripps/AutoDock-GPU/releases/download/v1.5.3/adgpu-v1.5.3_linux_ocl_128wi 
